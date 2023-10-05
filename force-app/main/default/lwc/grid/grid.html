@@ -1,0 +1,23 @@
+<template>
+    <!-- <div class="container" lwc:dom="manual"></div>
+    <div class="containr">
+        <lightning-datatable key-field="myid" data={bikes} columns={columns}
+                hide-checkbox-column
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={onHandleSort}></lightning-datatable> -->
+
+        <!-- <lightning-datatable key-field="myid" data={bikes} columns={columns}
+                default-sort-direction={defaultSortDirection} sorted-direction={sortDirection} 
+                sorted-by={sortedBy} onsort={onHandleSort}></lightning-datatable> -->
+    <!-- </div> -->
+
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+</template>

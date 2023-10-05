@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "trailhead-bike-card",
+  "namespace": "",
+  "sfdcLoginUrl": "https://CS200.salesforce.com",
+  "sourceApiVersion": "58.0"
+}
