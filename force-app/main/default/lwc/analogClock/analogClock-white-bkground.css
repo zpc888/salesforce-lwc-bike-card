@@ -11,36 +11,27 @@
 }
 
 .clock-face {
-    fill: #333;
-    stroke: #f0f0f0;
-    stroke-width: 1;
+    fill: #f0f0f0;
+    stroke: #333;
+    stroke-width: 2;
 }
 
 .hour-number {
     font-size: 14px; /* Increase font size for better visibility */
-    fill: #f0f0f0;
+    fill: #333;
     text-anchor: middle;
     dominant-baseline: middle; /* Center the text vertically */
 }
 
 .minute-dot {
-    fill: #f0f0f0;
-}
-
-.second-hand {
-    stroke: #e40505;
-    stroke-width: 1;
-}
-
-.hour-hand,
-.minute-hand {
-    stroke: #f0f0f0;
-    stroke-width: 2;
+    fill: #333;
 }
 
 .hour-hand,
 .minute-hand,
 .second-hand {
+    stroke: #333;
+    stroke-width: 2;
     stroke-linecap: round;
     transform-origin: 50% 50%;
 }
