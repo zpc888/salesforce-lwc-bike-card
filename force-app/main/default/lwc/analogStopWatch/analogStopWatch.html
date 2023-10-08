@@ -1,0 +1,32 @@
+<template>
+    <div class="c-container">
+        <lightning-layout>
+            <lightning-layout-item size="6" padding="around-small">
+                <div class="clock slds-align_absolute-center" >
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                        <!-- Draw the clock face -->
+                        <circle class="clock-face" cx="50" cy="50" r="45" />
+                        <!-- Draw the hour numbers -->
+                        <template for:each={hours} for:item="hour">
+                            <text key={hour.value} class="hour-number" x={hour.cx} y={hour.cy}>{hour.value}</text>
+                        </template>
+                        <!-- Draw dots for the minutes -->
+                        <template for:each={dots} for:item="dot">
+                            <circle key={dot.value} class="minute-dot" cx={dot.cx} cy={dot.cy} r="1" />
+                        </template>
+                        <!-- Draw the clock hands -->
+                        <line class="hour-hand" x1="50" y1="50" x2="50" y2="35" />
+                        <line class="minute-hand" x1="50" y1="50" x2="50" y2="30" />
+                        <line class="second-hand" x1="50" y1="50" x2="50" y2="25" />
+                    </svg>
+                </div>                
+            </lightning-layout-item>
+            <lightning-layout-item size="6" padding="around-small">
+                <div class="stopWatch slds-p-top_large slds-align_absolute-center">
+                    <lightning-badge label={elapsedTime} class="slds-badge_inverse"></lightning-badge>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+
+    </div>
+</template>
